@@ -21,6 +21,9 @@ struct Preferences: Codable {
     var StandardOutPath: String?
     var StandardErrorPath: String?
     var LimitLoadToSessionType: String?
+//    var KeepAlive: Dictionary<String, Bool> = ["SuccessfulExit": true]
+    var KeepAlive: Bool = true
+
 }
 
 struct ComponentPlistRoot : Codable {
